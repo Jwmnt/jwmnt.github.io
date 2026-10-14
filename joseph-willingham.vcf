@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Willingham;Joseph;;;
+FN:Joseph Willingham
+ORG:Century 21 Results
+TITLE:REALTOR
+TEL;TYPE=CELL,VOICE:+17068079393
+EMAIL;TYPE=INTERNET,WORK:joseph@parkwestgroup.com
+ADR;TYPE=WORK:;;6424 Bells Ferry Rd, Suite 142;Woodstock;GA;30189;USA
+URL:https://parkwestgroup.com
+URL;TYPE=Zillow:https://www.zillow.com/profile/ParkWestGroup
+NOTE:REALTOR with Century 21 Results, metro Atlanta. Residential, luxury, land and investment.
+PHOTO;VALUE=URI;TYPE=JPEG:https://jwmnt.github.io/headshot.jpg
+END:VCARD

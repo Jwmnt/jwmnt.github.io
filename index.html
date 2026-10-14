@@ -72,12 +72,9 @@
   .row:last-child { border-bottom: 1px solid var(--line); }
   .row .k { flex: 0 0 64px; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
   .row .v { flex: 1; min-width: 0; }
-  .row .v a, .row .v span { color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 400; overflow-wrap: break-word; user-select: all; -webkit-user-select: all; }
+  .row .v a, .row .v span { color: var(--gold); text-decoration: none; font-size: 16px; font-weight: 400; overflow-wrap: break-word; }
   .row .v small { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; font-weight: 300; }
-  .row .v a:hover { color: var(--gold); }
-  .copy { flex: 0 0 auto; background: none; border: 1px solid var(--line); color: var(--muted); font-family: var(--body); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; padding: 6px 9px; cursor: pointer; transition: color .15s, border-color .15s; min-width: 62px; }
-  .copy:hover, .copy:focus-visible { color: var(--gold); border-color: var(--gold); outline: none; }
-  .copy.done { color: var(--gold); border-color: var(--gold); }
+  .row .v a:hover { color: #d6b77c; text-decoration: underline; text-underline-offset: 3px; }
   .links { margin-top: 24px; display: grid; gap: 8px; }
   .links a { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; border: 1px solid var(--line); color: var(--fg); text-decoration: none; transition: border-color .15s; }
   .links a:hover, .links a:focus-visible { border-color: var(--gold); outline: none; }
@@ -127,18 +124,15 @@
     <div class="rows">
       <div class="row">
         <div class="k">Direct</div>
-        <div class="v"><a href="tel:+17068079393">706-807-9393</a><small>Call or text anytime</small></div>
-        <button class="copy" type="button" data-copy="706-807-9393" aria-label="Copy direct number">Copy</button>
+        <div class="v"><a href="tel:+17068079393">706-807-9393</a><small>Tap to call or text</small></div>
       </div>
       <div class="row">
         <div class="k">Cell</div>
-        <div class="v"><a href="tel:+17062520909">706-252-0909</a></div>
-        <button class="copy" type="button" data-copy="706-252-0909" aria-label="Copy cell number">Copy</button>
+        <div class="v"><a href="tel:+17062520909">706-252-0909</a><small>Tap to call</small></div>
       </div>
       <div class="row">
         <div class="k">Email</div>
         <div class="v"><a href="mailto:joseph@parkwestgroup.com">joseph@<wbr>parkwestgroup.com</a></div>
-        <button class="copy" type="button" data-copy="joseph@parkwestgroup.com" aria-label="Copy email address">Copy</button>
       </div>
       <div class="row">
         <div class="k">Office</div>
@@ -146,7 +140,6 @@
           <a href="https://maps.google.com/?q=6424+Bells+Ferry+Rd+Suite+142+Woodstock+GA+30189" target="_blank" rel="noopener">6424 Bells Ferry Rd, Suite 142</a>
           <small>Woodstock, GA 30189</small>
         </div>
-        <button class="copy" type="button" data-copy="6424 Bells Ferry Rd, Suite 142, Woodstock, GA 30189" aria-label="Copy office address">Copy</button>
       </div>
     </div>
 

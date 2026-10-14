@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joseph Willingham</title>
+<meta name="description" content="Joseph Willingham, REALTOR with Century 21 Results. Call, text, email or save my contact.">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Joseph Willingham">
+<meta property="og:description" content="REALTOR with Century 21 Results. Call, text, email or save my contact.">
+<meta property="og:url" content="https://jwmnt.github.io/">
+<meta property="og:image" content="https://jwmnt.github.io/headshot.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Joseph Willingham">
+<meta name="twitter:description" content="REALTOR with Century 21 Results. Call, text, email or save my contact.">
+<meta name="twitter:image" content="https://jwmnt.github.io/headshot.jpg">
+<link rel="icon" href="headshot.jpg">
+<link rel="apple-touch-icon" href="headshot.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap">
+<style>
+  :root {
+    --bg: #0e0d0b;
+    --card: #171512;
+    --card-2: #1e1b17;
+    --fg: #efe8da;
+    --muted: #a0968a;
+    --gold: #c9a86a;
+    --gold-soft: rgba(201, 168, 106, 0.22);
+    --line: rgba(201, 168, 106, 0.18);
+    --display: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+    --body: "Jost", "Helvetica Neue", Arial, sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html { height: 100%; }
+  body {
+    margin: 0;
+    min-height: 100%;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--body);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding-block: 28px 40px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    background-image: radial-gradient(ellipse 70% 40% at 50% -5%, rgba(201,168,106,0.10), transparent 60%);
+  }
+  .card { max-width: 440px; margin: 0 auto; background: var(--card); border: 1px solid var(--line); position: relative; }
+  .card::before { content: ""; position: absolute; inset: 8px; border: 1px solid var(--line); pointer-events: none; }
+  .inner { padding: 40px 28px 28px; position: relative; }
+  .photo { width: 128px; height: 128px; margin: 0 auto 22px; border-radius: 50%; padding: 5px; border: 1px solid var(--gold); position: relative; }
+  .photo::after { content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 1px solid var(--gold-soft); }
+  .photo img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+  .eyebrow { text-align: center; font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); font-weight: 400; margin: 0 0 10px; }
+  h1 { font-family: var(--display); font-weight: 500; font-size: 40px; line-height: 1.05; text-align: center; margin: 0; letter-spacing: 0.01em; text-wrap: balance; }
+  .brokerage { text-align: center; margin: 10px 0 0; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .rule { display: flex; align-items: center; gap: 12px; margin: 26px 0; color: var(--gold); }
+  .rule::before, .rule::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+  .rule i { font-style: normal; font-size: 10px; letter-spacing: 0.1em; }
+  .actions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .actions a { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 14px 4px 12px; background: var(--card-2); border: 1px solid var(--line); color: var(--fg); text-decoration: none; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; transition: border-color .15s, background .15s; }
+  .actions a:hover, .actions a:focus-visible { border-color: var(--gold); background: #24201a; outline: none; }
+  .actions a.primary { background: var(--gold); color: #1a150c; border-color: var(--gold); font-weight: 500; }
+  .actions a.primary:hover, .actions a.primary:focus-visible { background: #d6b77c; }
+  .actions svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+  .rows { margin-top: 26px; display: flex; flex-direction: column; }
+  .row { display: flex; align-items: center; gap: 12px; padding: 13px 0; border-top: 1px solid var(--line); }
+  .row:last-child { border-bottom: 1px solid var(--line); }
+  .row .k { flex: 0 0 64px; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
+  .row .v { flex: 1; min-width: 0; }
+  .row .v a, .row .v span { color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 400; overflow-wrap: break-word; user-select: all; -webkit-user-select: all; }
+  .row .v small { display: block; color: var(--muted); font-size: 13px; margin-top: 2px; font-weight: 300; }
+  .row .v a:hover { color: var(--gold); }
+  .copy { flex: 0 0 auto; background: none; border: 1px solid var(--line); color: var(--muted); font-family: var(--body); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; padding: 6px 9px; cursor: pointer; transition: color .15s, border-color .15s; min-width: 62px; }
+  .copy:hover, .copy:focus-visible { color: var(--gold); border-color: var(--gold); outline: none; }
+  .copy.done { color: var(--gold); border-color: var(--gold); }
+  .links { margin-top: 24px; display: grid; gap: 8px; }
+  .links a { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 16px; border: 1px solid var(--line); color: var(--fg); text-decoration: none; transition: border-color .15s; }
+  .links a:hover, .links a:focus-visible { border-color: var(--gold); outline: none; }
+  .links b { display: block; font-weight: 400; font-size: 15px; }
+  .links small { display: block; color: var(--muted); font-size: 12px; letter-spacing: 0.04em; }
+  .links svg { width: 16px; height: 16px; stroke: var(--gold); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex: 0 0 auto; }
+  .foot { margin-top: 26px; text-align: center; font-size: 11px; letter-spacing: 0.08em; color: var(--muted); line-height: 1.7; }
+  .foot .c21 { color: var(--gold); letter-spacing: 0.2em; text-transform: uppercase; font-size: 10px; }
+  @media (max-width: 380px) {
+    .inner { padding: 34px 20px 22px; }
+    h1 { font-size: 34px; }
+    .actions a { font-size: 10px; letter-spacing: 0.1em; }
+    .row .k { flex-basis: 54px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="inner">
+    <div class="photo"><img src="headshot.jpg" alt="Joseph Willingham"></div>
+    <p class="eyebrow">Metro Atlanta Real Estate</p>
+    <h1>Joseph Willingham</h1>
+    <p class="brokerage">REALTOR&reg; &middot; Century 21 Results</p>
+
+    <div class="rule" aria-hidden="true"><i>&#9670;</i></div>
+
+    <nav class="actions" aria-label="Contact Joseph">
+      <a href="tel:+17068079393">
+        <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+        Call
+      </a>
+      <a href="sms:+17068079393">
+        <svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H8l-5 3 1.5-4.5A8 8 0 1 1 21 12z"/></svg>
+        Text
+      </a>
+      <a href="mailto:joseph@parkwestgroup.com">
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 7l9 6 9-6"/></svg>
+        Email
+      </a>
+      <a class="primary" href="joseph-willingham.vcf" download="Joseph Willingham.vcf">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/><path d="M19 5v6M16 8h6"/></svg>
+        Save
+      </a>
+    </nav>
+
+    <div class="rows">
+      <div class="row">
+        <div class="k">Mobile</div>
+        <div class="v"><a href="tel:+17068079393">706-807-9393</a><small>Call or text anytime</small></div>
+        <button class="copy" type="button" data-copy="706-807-9393" aria-label="Copy phone number">Copy</button>
+      </div>
+      <div class="row">
+        <div class="k">Email</div>
+        <div class="v"><a href="mailto:joseph@parkwestgroup.com">joseph@<wbr>parkwestgroup.com</a></div>
+        <button class="copy" type="button" data-copy="joseph@parkwestgroup.com" aria-label="Copy email address">Copy</button>
+      </div>
+      <div class="row">
+        <div class="k">Office</div>
+        <div class="v">
+          <a href="https://maps.google.com/?q=6424+Bells+Ferry+Rd+Suite+142+Woodstock+GA+30189" target="_blank" rel="noopener">6424 Bells Ferry Rd, Suite 142</a>
+          <small>Woodstock, GA 30189</small>
+        </div>
+        <button class="copy" type="button" data-copy="6424 Bells Ferry Rd, Suite 142, Woodstock, GA 30189" aria-label="Copy office address">Copy</button>
+      </div>
+    </div>
+
+    <div class="links">
+      <a href="https://www.zillow.com/profile/ParkWestGroup" target="_blank" rel="noopener">
+        <span><b>Client reviews on Zillow</b><small>A little more about me and what my clients say</small></span>
+        <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+      <a href="https://parkwestgroup.com" target="_blank" rel="noopener">
+        <span><b>parkwestgroup.com</b><small>Listings, home search and home valuation</small></span>
+        <svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
+
+    <p class="foot">
+      <span class="c21">Century 21 Results</span><br>
+      6424 Bells Ferry Rd, Suite 142, Woodstock, GA 30189<br>
+      Each office is independently owned and operated.
+    </p>
+  </div>
+</main>
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.copy');
+    Array.prototype.forEach.call(buttons, function (btn) {
+      btn.addEventListener('click', function () {
+        var text = btn.getAttribute('data-copy');
+        var done = function () {
+          btn.textContent = 'Copied';
+          btn.classList.add('done');
+          setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600);
+        };
+        var fallback = function () {
+          var target = btn.parentNode.querySelector('.v a, .v span');
+          if (!target) return;
+          var range = document.createRange();
+          range.selectNodeContents(target);
+          var sel = window.getSelection();
+          sel.removeAllRanges();
+          sel.addRange(range);
+          btn.textContent = 'Selected';
+          setTimeout(function () { btn.textContent = 'Copy'; }, 1600);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, fallback);
+        } else {
+          fallback();
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>
